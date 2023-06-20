@@ -1,5 +1,5 @@
 # Changelog
 
-# 0.0.2 - Lección 2: Plantillas para las páginas HTML
+# 0.0.3 - Lección 3: Formularios en Flask
 
-- Plantilla html
+- Formularios flask
