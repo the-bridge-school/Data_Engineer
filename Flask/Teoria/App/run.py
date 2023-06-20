@@ -1,38 +1,22 @@
-from flask import Flask 
+from flask import Flask, render_template
+
+app = Flask(__name__)
 
 
-# Flask es una instancia WSGI y por eso la clase la instanciamos en una 
-# variable app
+posts = []
 
-app = Flask(__name__) # Para crear dicha instancia, debemos pasar como 
-                      # primer argumento el nombre del módulo o paquete 
-                      # de la aplicación. Para estar seguros de ello, 
-                      # utilizaremos la palabra reservada __name__. 
-                      # Esto es necesario para que Flask sepa, por ejemplo, 
-                      # donde encontrar las plantillas de nuestra aplicación 
-                      # o los ficheros estáticos.
 
-@app.route('/', methods=['GET'])         # @app es un decorador que nos ayuda a indicarle a python
-                        # que route pertenece a flask.
+@app.route("/")
+def index():
+    return render_template("index.html", num_posts=len(posts))
 
-def hello_world():      # Función de python que realiza la magia. 
-    return 'Hello, World!'
 
-# Nota 1. importante no nombrar el archivo como flask.py porque puede crear un 
-# conflicto con Flask
+@app.route("/p/<string:slug>/")
+def show_post(slug):
+    return render_template("post_view.html", slug_title=slug)
 
-# Nota 2. si queremos ejecutar nuestra app sin pulsar el "Play" hay que hacer unas pequeñas
-# modificaciones en el virtualenv
 
-# En Linux/Mac se encuentra en env/bin/activate. Al final del fichero añadimos lo siguiente:
-# export FLASK_APP="run.py"
-
-# En Windows se encuentra en env\Scripts\activate.bat. Al final del fichero añadimos lo siguiente:
-# set "FLASK_APP=run.py"
-
-# Nota 2.1 Se tiene que desactivar y volver a activar para que los cambios se tengan en cuenta
-
-# Una vez realizado estos cambios en la terminal se ejecuta el comando
-# flask app1
-
-# Nota 3 no usar el debug en Producción.
+@app.route("/admin/post/")
+@app.route("/admin/post/<int:post_id>/")
+def post_form(post_id=None):
+    return render_template("admin/post_form.html", post_id=post_id)

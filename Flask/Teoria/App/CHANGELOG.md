@@ -1,5 +1,5 @@
 # Changelog
 
-# 0.0.1 - Lección 1: Mi primera aplicación Flask
+# 0.0.2 - Lección 2: Plantillas para las páginas HTML
 
-- Versión inicial de la aplicación
+- Plantilla html
