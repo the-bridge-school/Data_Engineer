@@ -1,11 +1,3 @@
-"""
-
-AUTOR: Juanjo
-
-FECHA DE CREACIÓN: 24/01/2019
-
-"""
-
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, TextAreaField
 from wtforms.validators import DataRequired, Email, Length
