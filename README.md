@@ -1,6 +1,6 @@
 # Data Engineering
 
-![](.\img\dataen-removebg-preview.png)
+![](https://as1.ftcdn.net/v2/jpg/02/36/91/90/1000_F_236919028_MkSMEmr6ifkMObNw4yPY3gKtB0qZ8ayK.jpg)
 
 ¡Bienvenido al curso de Data Engineering! Soy Juan Maniglia, especialista en Data Science, y estaré liderando este curso. Actualmente enseño en The Bridge School, y he diseñado este curso para brindarte una sólida introducción y entendimiento del Data Engineering.
 
