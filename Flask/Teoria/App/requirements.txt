@@ -1,8 +1,0 @@
-Click
-Flask
-Flask-WTF
-itsdangerous
-Jinja2
-MarkupSafe
-Werkzeug
-WTForms
