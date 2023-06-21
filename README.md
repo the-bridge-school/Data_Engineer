@@ -1,6 +1,6 @@
 # Data Engineering
 
-![](https://img.myloview.com/stickers/data-engineering-icon-trendy-flat-vector-data-engineering-icon-on-white-background-from-general-collection-400-144070248.jpg)
+![](img\dataen-removebg-preview.png)
 
 ¡Bienvenido al curso de Data Engineering! Soy Juan Maniglia, especialista en Data Science, y estaré liderando este curso. Actualmente enseño en The Bridge School, y he diseñado este curso para brindarte una sólida introducción y entendimiento del Data Engineering.
 
