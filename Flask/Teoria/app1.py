@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask
 
 
 # Flask es una instancia WSGI y por eso la clase la instanciamos en una 
