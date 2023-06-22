@@ -1,11 +1,3 @@
-"""
-
-AUTOR: Juanjo
-
-FECHA DE CREACIÓN: 24/05/2019
-
-"""
-
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 
