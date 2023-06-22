@@ -22,7 +22,7 @@ def create_app(settings_module):
     configure_logging(app)
 
     login_manager.init_app(app)
-    login_manager.login_view = "login"
+    login_manager.login_view = "auth.login"
 
     db.init_app(app)
 
@@ -51,6 +51,10 @@ def register_error_handlers(app):
     @app.errorhandler(404)
     def error_404_handler(e):
         return render_template('404.html'), 404
+
+    @app.errorhandler(401)
+    def error_404_handler(e):
+        return render_template('401.html'), 401
 
 
 def configure_logging(app):
