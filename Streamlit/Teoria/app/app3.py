@@ -15,8 +15,8 @@ st.write('Hola :sunglasses: :heart: ')
 st.write(1+1)
 
 # Variables
-a = 2**2
-st.write(a)
+a = 2**3
+st.write(a*5)
 
 # Table
 st.write(df.head(5))

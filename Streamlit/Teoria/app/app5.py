@@ -25,4 +25,4 @@ df['lon'] = [latlong[city]['lon'] for city in city_random]
 
 # Map
 map_df = df[['lat', 'lon']]
-st.map(map_df, zoom=1)
+st.map(map_df, zoom=5)

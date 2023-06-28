@@ -1,8 +1,8 @@
 import streamlit as st
 # Write a page title
-st.title('Hello World. This is a Title')
+st.title('Hello World. This is a Title Juan...')
 
-# Al ejecutar este código no tendremos que "logear" en Streamlit (solo nuestro correo)
+# Al ejecutar este código nos tendremos que "logear" en Streamlit (solo nuestro correo)
 
 # En la terminal copiamos y pegamos el comando que nos indica algo similar a ""streamlit run c:/Users....""
 
