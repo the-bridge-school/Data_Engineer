@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtener Iris</title>
+    <style>
+        body {
+            background: url('/static/img/fondo.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        {% for fila in iris %}
+        <tr>
+            {% for valor in fila.values() %}
+            <td>{{ valor }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <button onclick="location.href='/'" type="button">Volver</button>
+</body>
+</html>
