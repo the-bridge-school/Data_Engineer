@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predicción de la especie de Iris</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url('/static/img/flowers.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50; /* color verde */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        a {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Predicción de la especie de Iris</h1>
+    <img src="/static/img/iris.jpg" alt="Iris flower" style="width:200px;height:200px;">
+    <form action="/prediction-result" method="post">
+        <label for="sepal_length">Longitud del Sépalo:</label><br>
+        <input type="text" id="sepal_length" name="sepal_length"><br>
+        <label for="sepal_width">Ancho del Sépalo:</label><br>
+        <input type="text" id="sepal_width" name="sepal_width"><br>
+        <label for="petal_length">Longitud del Pétalo:</label><br>
+        <input type="text" id="petal_length" name="petal_length"><br>
+        <label for="petal_width">Ancho del Pétalo:</label><br>
+        <input type="text" id="petal_width" name="petal_width"><br>
+        <input type="submit" value="Predecir">
+    </form>
+    <p><a href="/">Regresar</a></p>
+</body>
+</html>

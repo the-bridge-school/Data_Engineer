@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficar Iris</title>
+    <style>
+        /* Agrega tus propios estilos aquí */
+        body {
+            background-image: url('/static/img/fondo.jpg');
+            background-size: 100px 100px; /* Establece el ancho y el alto de la imagen */
+            background-repeat: repeat; /* Permite que la imagen se repita a través del fondo */
+            font-family: Arial, sans-serif;
+        }
+        img {
+            display: block;
+            margin: auto;
+            width: 50%; /* Ajusta esto como necesites */
+        }
+        button {
+            display: block;
+            width: 100px;
+            height: 50px;
+            margin: 20px auto;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grafica de Iris</h1>
+    <img src="/imagen-iris" alt="Grafica de Iris">
+    <button onclick="location.href='/'" type="button">Volver</button>
+</body>
+</html>
